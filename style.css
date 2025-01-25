@@ -24,6 +24,9 @@
     font-family: 'MyCustomFont', sans-serif;
 }
 
+
+
+
 :root {
     --bg-color: rgb(241, 241, 241);
     --second-bg-color: rgb(255, 255, 0);
@@ -41,8 +44,9 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     background: url('images/11111.jpg') no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-size: contain; /* Или cover, в зависимости от нужного эффекта */
+    background-position: calc(100% - 50px) center; /* Смещаем фон на 50px от правого края */
+    background-attachment: fixed; /* Фон будет фиксирован при прокрутке */
     
     z-index: -1;
 }
