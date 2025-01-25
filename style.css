@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Versus&display=swap');
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/versus-ultra_RUS_BY_LYAJKA.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *{
     margin: 0;
@@ -8,7 +13,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Versus', sans-serif; 
+    font-family: 'MyCustomFont', sans-serif;
 }
 
 :root{
@@ -106,8 +111,8 @@ section{
 .home-content h1{
     position: relative;
     display: inline-block;
-    font-size: 5.5rem;
-    font-weight: 700;
+    font-size: 4em;
+  
     line-height: 1;
 }
 
@@ -154,15 +159,17 @@ section{
 
 .home-content p {
     position: relative;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1rem;
+   
     margin: 1.5rem 0;
  /* Отступ снизу */ /* Уменьшенные верхний и нижний отступы */
+
+    margin-bottom: 1.5rem;
+ 
 }
 
-.Ptop{
-    margin-top: 30%;  /* Отступ сверху */
-}
+
+
 
 .btn-box{
     position: relative;
@@ -873,6 +880,8 @@ section:nth-child(odd) .animate.scroll,
         height: 38px;
     }
 }
+
+
 
 @media (max-width: 462px){
     .home-content h1{
