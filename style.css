@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    justify-content: center;
     text-decoration: none;
     border: none;
     outline: none;
@@ -33,14 +34,16 @@
 html {
     font-size: 90%;
     overflow-x: hidden;
+    background-size: cover;
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
     background: url('images/11111.jpg') no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    
     z-index: -1;
 }
 
@@ -137,7 +140,7 @@ section {
     -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     background-position: -33rem 0;
 }
 
@@ -356,6 +359,7 @@ span {
     position: relative;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    font-family: "MyCustomFont1", sans-serif;
 }
 
 .btn-box.btns {
@@ -456,6 +460,7 @@ span {
 .education-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
+    font-family: "MyCustomFont1", sans-serif;
 }
 
 .skills {
@@ -524,6 +529,7 @@ span {
     font-size: 1.7rem;
     display: flex;
     justify-content: space-between;
+    font-family: "MyCustomFont1", sans-serif;
 }
 
 .skills-content .progress h3 span {
@@ -580,6 +586,7 @@ span {
 .contact {
     max-height: auto;
     padding-bottom: 7rem;
+    
 }
 
 .contact h2 {
@@ -617,6 +624,7 @@ span {
     background: transparent;
     border-radius: .6rem;
     border: .2rem solid var(--main-color);
+    font-family: "MyCustomFont1", sans-serif;
 }
 
 .contact form .input-box .input-field input::placeholder,
@@ -673,6 +681,7 @@ span {
 
 .footer-text p {
     font-size: 1.6rem;
+    font-family: "MyCustomFont1", sans-serif;
 }
 
 .footer-iconTop a {
@@ -765,6 +774,9 @@ section:nth-child(odd) .animate.scroll,
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
     }
 }
 
@@ -797,12 +809,10 @@ section:nth-child(odd) .animate.scroll,
         background: var(--bg-color);
     }
 
-    body {
+    html{
         background-position: center;
-    }
-
-    .home {
-        background-position: center;
+        background-size: cover;
+        justify-content: center;
     }
 
     #menu-icon {
@@ -869,6 +879,10 @@ section:nth-child(odd) .animate.scroll,
 @media (max-width: 520px) {
     html {
         font-size: 50%;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+
     }
 
     .home {
@@ -891,10 +905,17 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 380px) {
     .home-content h1 {
         font-size: 5.2rem;
     }
+
+    html {
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+    }
+
 
     .home {
         background-position: center;
@@ -939,9 +960,12 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 350px) {
     .home {
         justify-content: center;
+    }
+    html{
+        background-position: center;
     }
 
     .home {
